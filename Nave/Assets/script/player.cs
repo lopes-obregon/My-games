@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class player : MonoBehaviour
@@ -10,7 +9,7 @@ public class player : MonoBehaviour
    //movimento do personagem
     private Vector2 movement;
 
-   
+    public Joystick joystick;
    
     
     // Start is called before the first frame update
@@ -23,11 +22,16 @@ public class player : MonoBehaviour
     void Update(){
         // o quanto o jogador precionou no teclado
         //coleta os eixos de movimentação
-        float inputX = Input.GetAxis("Horizontal");
-        float inputY = Input.GetAxis("Vertical");
+        //movimento do teclado
+        /*float inputX = Input.GetAxis("Horizontal");
+        float inputY = Input.GetAxis("Vertical");*/
+        float inputX = joystick.Horizontal;
+        float inputY = joystick.Vertical;
         //movimentação pela direção
         movement = new Vector2(inputX * speed.x, inputY * speed.y);
-        if (Input.GetButtonDown("Fire1"))
+        
+        //Input.GetButtonDown("Fire1") to computer
+        if ((Input.touchCount == 2) || touchFire(inputX, inputY, Input.touchCount))
         {
             Weapon weapon = GetComponent<Weapon>();
             if(weapon != null)
@@ -35,6 +39,24 @@ public class player : MonoBehaviour
                 weapon.Attack();
             }
         }
+   
+
+ }
+    private bool touchFire(float inputX, float inputY, int touchCount)
+    {
+            bool aux;
+        if(inputX == 0 && touchCount == 1)
+            {
+                aux = true;
+            }else if(inputY == 0 && touchCount == 1)
+            {
+                aux = true;
+            }
+            else
+            {
+                aux = false;
+            }
+            return aux;
     }
     void FixedUpdate()
     {
