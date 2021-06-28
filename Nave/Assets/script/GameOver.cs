@@ -19,8 +19,9 @@ public class GameOver : MonoBehaviour
         this.positionY = 2.5f;
         this.positonX = 2;
 
-        const float buttonWidth = 84;
-        const float buttonHeight = 60;
+        const float buttonWidth = 500;
+        const float buttonHeight = 300;
+        GUI.skin = newSin;
         
         if (GUI.Button(new Rect((Screen.width / this.positonX) - (buttonWidth / 2), (2 * Screen.height / this.positionY) - (buttonWidth / 2), buttonWidth, buttonHeight), this.labelButton))
         {
@@ -37,11 +38,10 @@ public class GameOver : MonoBehaviour
             SceneManager.LoadScene(this.sceneLoad);
             // Application.LoadLevel("MainScene");
         }
-        GUI.skin = newSin;
         this.labelButton = "Game Over!";
         this.positionY = 5.5f;
         this.positonX = 5.5f;
-        Rect position = new Rect((Screen.width / this.positonX) - (buttonWidth / 2), (2 * Screen.height / this.positionY) - (buttonWidth / 2), 500, 500);
+        Rect position = new Rect((Screen.width / this.positonX) - (buttonWidth / 2), (2 * Screen.height / this.positionY) - (buttonWidth / 2), 2000, 300);
         GUI.Label(position, this.labelButton);
 
     }

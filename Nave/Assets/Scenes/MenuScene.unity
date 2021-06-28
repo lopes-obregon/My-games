@@ -148,8 +148,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155272750}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -352.9091, y: -185.729, z: 0}
-  m_LocalScale: {x: 1.7432531, y: 1.3465964, z: 1}
+  m_LocalPosition: {x: -352.7442, y: -185.941, z: 0}
+  m_LocalScale: {x: 1.8750886, y: 1.4907502, z: 1}
   m_Children: []
   m_Father: {fileID: 1777531335}
   m_RootOrder: 0
@@ -234,11 +234,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6637599b18c59342b1097811b4dfa44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  labelButton: Space Attack!
-  positionY: 4.3
+  labelButton: Space Attack SIMPLE!
+  positionY: 3
   positonX: 2
-  buttonWidth: 330
-  buttonHeight: 64
+  buttonWidth: 2000
+  buttonHeight: 1500
 --- !u!4 &373893385
 Transform:
   m_ObjectHideFlags: 0
@@ -284,8 +284,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   labelButton: Strat!
   sceneLoad: MainScene
-  positionY: 3.5
+  positionY: 3.4
   positonX: 2
+  buttonWidth: 500
+  buttonHeight: 300
 --- !u!4 &597269261
 Transform:
   m_ObjectHideFlags: 0
@@ -332,6 +334,8 @@ MonoBehaviour:
   labelButton: Quit!
   positionY: 2
   positonX: 2
+  buttonWidth: 500
+  buttonHeight: 300
 --- !u!4 &789381732
 Transform:
   m_ObjectHideFlags: 0
@@ -393,6 +397,8 @@ MonoBehaviour:
   sceneLoad: ScoreScene
   positionY: 2.5
   positonX: 2
+  buttonWidth: 500
+  buttonHeight: 300
 --- !u!1 &1777531334
 GameObject:
   m_ObjectHideFlags: 0

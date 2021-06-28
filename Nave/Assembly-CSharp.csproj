@@ -56,30 +56,30 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
     <Compile Include="Assets\script\Health.cs" />
     <Compile Include="Assets\script\LabelGameName.cs" />
     <Compile Include="Assets\script\Spawn.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
     <Compile Include="Assets\script\Score.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
     <Compile Include="Assets\script\MoveShoot.cs" />
     <Compile Include="Assets\script\ReadScore.cs" />
     <Compile Include="Assets\script\inimigo.cs" />
+    <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\script\Menu.cs" />
     <Compile Include="Assets\script\DestroyLimit.cs" />
     <Compile Include="Assets\script\QuitGame.cs" />
     <Compile Include="Assets\script\Scroollin.cs" />
     <Compile Include="Assets\script\DestroyExplosion.cs" />
     <Compile Include="Assets\script\Shoot.cs" />
+    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\script\GameOver.cs" />
     <Compile Include="Assets\script\Weapon.cs" />
     <Compile Include="Assets\script\SoundEffects.cs" />
-    <Compile Include="Assets\script\player.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Base\Joystick.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
-    <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
-    <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
+    <Compile Include="Assets\script\player.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
